@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -24,15 +23,25 @@ class _MainPageState extends State<MainPage> {
               icon: const FaIcon(FontAwesomeIcons.magnifyingGlass))
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        shape: const CircleBorder(),
+        child: const FaIcon(FontAwesomeIcons.plus),
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
-            padding: EdgeInsets.only(left: 20),
-            child: Text(
-              "All notes",
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 5.0),
+                child: IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.circleUser)),
+              ),
+              const Text(
+                "All notes",
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
+            ],
           ),
           Row(
             children: [
