@@ -32,8 +32,7 @@ class _MainPageState extends State<MainPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            children: [
-              Padding(
+            children: [Padding(
                 padding: const EdgeInsets.only(left: 5.0),
                 child: IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.circleUser)),
               ),
